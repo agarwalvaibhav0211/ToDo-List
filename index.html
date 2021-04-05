@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dateSelection">
+        Select Month: 
+        <select name="month" id="month">
+            <option value="0" selected>Select A Month</option>
+        </select>
+        <br>
+        Select Date: 
+        <select name="Date" id="date">
+            <option value="0" selected>Select a Month First</option>
+        </select><br>
+        <button id="get-list">Display To-Do List</button>
+        <button id="Remove-All-Tasks">Remove all the Tasks</button>
+    </div>
+    <div class="first-modal" id="tasks">
+        <div class="modal-header">
+            <span class="modal-close" id="tasks-close"><strong>&times;</strong></span>
+            You have to do the following tasks:
+            <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
+                <input type="button" value="Add New" id="add-new" class="add">
+            </span>
+        </div>
+        <div id="tasks-list" class="modal-list">
+        </div>        
+    </div>
+    <div class="second-modal" id="add-task-window">
+        <div class="modal-header" id="add-task-header">
+            <span class="modal-close" id="add-task-close"><strong>&times;</strong></span>
+            Enter Details:
+        </div>
+        <div id="add-task-content">
+            Enter Title: <input type="text" name="task-title" id="task-title"><br>
+            Enter Description: <textarea name="description" id="description" cols="50" rows="5"></textarea><br>
+            <button class="add" id="create">Create</button>
+        </div>
+    </div>
+    <div class="second-modal" id="task-detail-window">
+        <div class="modal-header" id="task-detail-header">
+            <span class="modal-close" id="task-detail-close"><strong>&times;</strong></span>
+            <span id="task-title-dis"></span>
+            <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
+                <input type="button" value="Delete" id="delete-task" class="delete">
+            </span>
+        </div>
+        <div id="task-detail-content">
+            <spanid id="task-description-dis"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+.first-modal
+{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+.add
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.add:hover
+{
+    background-color: lime;
+    color:white;
+}
+.delete
+{
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.delete:hover
+{
+    background-color: rgb(255, 62, 62);
+    color:white;
+}
+.modal-header
+{
+    background-color: firebrick;
+    margin: 10% 10% 0% 10%;
+    padding: 1% 1% 1% 1%;
+    color:floralwhite;
+}
+.modal-list
+{
+    overflow: auto;
+    margin: 0% 10% ;
+    padding: 0.2% 0.2% 0.2% 0.2%;
+    background-color: rgb(194, 250, 179);
+}
+.modal-list-elem
+{
+    margin: 0.5% 0.1%;
+    padding: 0.1%;
+    background-color: rgb(179, 179, 241);    
+}
+.modal-list-elem:hover
+{
+    margin: 0.5% 0.1%;
+    padding: 0.1%;
+    background-color: rgb(215, 215, 250);    
+}
+.modal-header-content
+{
+    display:inline;
+}
+.modal-close
+{
+    cursor: pointer;
+    float: right;
+}
+.second-modal
+{
+    display: none;
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 2;
+}
+#add-task-header
+{
+    background-color:darkgreen;
+    margin: 10% 10% 0% 10%;
+    padding: 1% 1% 1% 1%;
+    color:floralwhite;
+}
+#add-task-content
+{
+    overflow: auto;
+    margin: 0% 10% ;
+    padding: 0.2% 0.2% 0.2% 0.2%;
+    background-color:rgb(236, 248, 237);
+}
+#task-detail-header
+{
+    background-color:lightseagreen;
+    color:linen;
+}
+#task-detail-content
+{
+    overflow: auto;
+    margin: 0% 10% ;
+    padding: 0.2% 0.2% 0.2% 0.2%;
+    background-color:rgb(236, 248, 237);
+}
